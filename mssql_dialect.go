@@ -50,6 +50,8 @@ func (db *mssql) SqlType(c *core.Column) string {
 		res = core.Int
 	case core.MediumText, core.TinyText, core.LongText:
 		res = core.Text
+	case core.Varchar:
+		res = "NVARCHAR"
 	case core.Double:
 		res = core.Real
 	default:
