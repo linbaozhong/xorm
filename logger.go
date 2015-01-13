@@ -95,7 +95,7 @@ func (s *SimpleLogger) Warningf(format string, v ...interface{}) (err error) {
 	}
 	return
 }
-
+// 
 func (s *SimpleLogger) Level() core.LogLevel {
 	return s.level
 }
